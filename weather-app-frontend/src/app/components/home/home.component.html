@@ -1,0 +1,17 @@
+<div class="body">
+    <div class="container d-flex justify-content-between">
+        <a routerLink="/home">
+            <img class="logo" src="assets/images/logo.png" alt="">
+        </a>
+        <div class="user my-auto">
+            <a routerLink="/user" class="text-decoration-none text-black">
+                <img class="userlogo" src="assets/images/user.png" alt="">
+                <span class="px-1">{{user}}</span>
+            </a>
+        </div>
+    </div>
+
+
+    <app-form></app-form>
+    <router-outlet></router-outlet>
+</div>

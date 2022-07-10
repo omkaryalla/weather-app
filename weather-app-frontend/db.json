@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "userName": "",
+      "password": "",
+      "token": "",
+      "watchList": [],
+      "id": 2
+    },
+    {
+      "userName": "",
+      "password": "",
+      "token": "",
+      "watchList": [],
+      "id": 3
+    },
+    {
+      "userName": "qwe",
+      "password": "a",
+      "token": "",
+      "watchList": [],
+      "id": 4
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+input{
+    background: none;
+    border: 0px;
+}
+
+input:focus{
+    background: none;
+}
+
+.search{
+    background: #ffffff66;
+    
+}

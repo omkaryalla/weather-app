@@ -1,0 +1,26 @@
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    height: fit-content;
+    width: 35rem;
+    padding: 2rem 5rem;
+    border-radius: .5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+}
+
+form{
+    padding-top: 1rem;
+    display: grid;
+}
+
+.form-group{
+    margin-bottom: 1rem;
+}
+
+a{
+    padding-top: 0.2rem;
+}

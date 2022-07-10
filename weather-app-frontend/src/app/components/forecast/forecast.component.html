@@ -1,0 +1,63 @@
+<p>{{city}}</p>
+
+    <h2 > Five day forecast in {{forecastData.name}} </h2>
+  
+  <mat-tab-group color="primary">
+    <mat-tab label="{{forecastData.details[0].date | date : 'mediumDate'}}">
+        <mat-list>
+            <mat-list-item> Minimum Temperature : {{forecastData.details[0].minTemperature}}F </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item> Maximum Temperature : {{forecastData.details[0].maxTemperature}}F </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item> Description : {{forecastData.details[0].description}}<span> 
+                <img src="http://openweathermap.org/img/w/{{forecastData.details[0].icon}}.png" alt="Site Logo" width="50" height="50">
+                </span> </mat-list-item>
+           </mat-list>  
+   </mat-tab>
+    <mat-tab label="{{forecastData.details[1].date | date : 'mediumDate'}}"> 
+      <mat-list>
+          <mat-list-item> Minimum Temperature : {{forecastData.details[1].minTemperature}}F </mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item> Maximum Temperature : {{forecastData.details[1].maxTemperature}}F </mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item> Description : {{forecastData.details[1].description}}<span> 
+              <img src="http://openweathermap.org/img/w/{{forecastData.details[1].icon}}.png" alt="Site Logo" width="50" height="50">
+              </span> </mat-list-item>
+         </mat-list>  
+          </mat-tab>
+    <mat-tab label="{{forecastData.details[2].date | date : 'mediumDate'}}">
+     
+      <mat-list>
+            <mat-list-item> Minimum Temperature : {{forecastData.details[2].minTemperature}}F </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item> Maximum Temperature : {{forecastData.details[2].maxTemperature}}F </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item> Description : {{forecastData.details[2].description}}<span> 
+                <img src="http://openweathermap.org/img/w/{{forecastData.details[2].icon}}.png" alt="Site Logo" width="50" height="50">
+                </span> </mat-list-item>
+           </mat-list> 
+    </mat-tab>
+    <mat-tab label="{{forecastData.details[3].date | date : 'mediumDate'}}"> 
+        <mat-list>
+            <mat-list-item> Minimum Temperature : {{forecastData.details[3].minTemperature}}F </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item> Maximum Temperature : {{forecastData.details[3].maxTemperature}}F </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item> Description : {{forecastData.details[3].description}}<span> 
+                <img src="http://openweathermap.org/img/w/{{forecastData.details[3].icon}}.png" alt="Site Logo" width="50" height="50">
+                </span> </mat-list-item>
+           </mat-list>  
+    </mat-tab>
+    <mat-tab label="{{forecastData.details[4].date | date : 'mediumDate'}}"> 
+        <mat-list>
+            <mat-list-item> Minimum Temperature : {{forecastData.details[4].minTemperature}}F </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item> Maximum Temperature : {{forecastData.details[4].maxTemperature}}F </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item> Description : {{forecastData.details[4].description}}<span> 
+                <img src="http://openweathermap.org/img/w/{{forecastData.details[4].icon}}.png" alt="Site Logo" width="50" height="50">
+                </span> </mat-list-item>
+           </mat-list>  
+    </mat-tab>
+    
+  </mat-tab-group>

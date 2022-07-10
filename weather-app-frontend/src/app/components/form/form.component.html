@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="row py-5">
+      <div class="col-8">
+          <div class="rounded-3 d-flex justify-content-between search">
+              <input type="text" placeholder="Search city" class="form-control" [(ngModel)]="city">
+              <button class="btn searchbtn" type="button" (click)="submit()">
+                  <img src="assets/images/search.png" alt="">
+              </button>
+          </div>
+      </div>
+  </div>
+  <div *ngIf="bool">
+    <app-forecast *ngIf="formCity != ''" [city]="formCity"></app-forecast>
+  </div>
+  <div *ngIf="!bool">
+    <app-forecast *ngIf="formCity != ''" [city]="formCity"></app-forecast>
+  </div>
+</div>
+
+<!---
+<div *ngIf="weather">
+  <div class="card">
+    <img src="http://openweathermap.org/img/w/{{weather.weather[0].icon}}.png" width="100px">
+  
+    <div class="card-body">
+      <h5 class="card-title">Date: {{todayNumber|date:"dd:MM:yy"}}</h5>
+      <p class="card-text">{{weather.weather[0].description}}</p>
+      <ul class="list-group">
+        <li class="list-group-item ">Current temperature: {{weather.main.temp}}</li>
+        <li class="list-group-item">Maximum temperature: {{weather.main.temp_max}}</li>
+        <li class="list-group-item">Minimum temperature: {{weather.main.temp_min}}</li>
+      </ul>
+    </div>
+  </div>
+  
+    <div class="card" aria-hidden="true">
+    
+      
+  </div>
+</div>-->
+
+
+
+
+
